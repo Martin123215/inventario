@@ -6,7 +6,7 @@ import {
   remove,
   onValue
 }
-from "https://www.gstatic.com/firebasejs/12.15.0/firebase-database.js";
+from "https://inven-d458a-default-rtdb.firebaseio.com";
 
 const form =
 document.getElementById("formAlmacen");
