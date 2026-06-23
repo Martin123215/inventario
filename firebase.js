@@ -1,14 +1,13 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+import {
+  getDatabase
+} from "https://www.gstatic.com/firebasejs/12.15.0/firebase-database.js";
+
 const firebaseConfig = {
   apiKey: "AIzaSyDwo5QyyVgbwrQX10u8Fls59imdrNqEESM",
   authDomain: "inven-d458a.firebaseapp.com",
+  databaseURL: "https://inven-d458a-default-rtdb.firebaseio.com",
   projectId: "inven-d458a",
   storageBucket: "inven-d458a.firebasestorage.app",
   messagingSenderId: "420195585893",
@@ -16,6 +15,6 @@ const firebaseConfig = {
   measurementId: "G-L5Y3834DEG"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
+export const db = getDatabase(app);
