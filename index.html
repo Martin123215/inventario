@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Administración de Almacenes</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Administración de Almacenes</h1>
+
+    <form id="formAlmacen">
+
+        <input
+            type="text"
+            id="nombreAlmacen"
+            placeholder="Nombre del almacén"
+            required
+        >
+
+        <button type="submit">
+            Crear Almacén
+        </button>
+
+    </form>
+
+    <div id="listaAlmacenes"></div>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
